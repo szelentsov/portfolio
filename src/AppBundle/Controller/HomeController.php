@@ -12,10 +12,11 @@ class HomeController extends Controller {
     */
 
     public function home() {
-        //$posts = $this->getDoctrine()->getRepository('AppBundle:Posts')->findAll();
+        $posts = $this->getDoctrine()->getRepository('AppBundle:Posts')->findAll();
         
-        return $this->render('home.html.twig');
+        return $this->render('home.html.twig', array('posts' => $posts));
     }
 
 }
-//, array('posts' => $posts)
+
+
