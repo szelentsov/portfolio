@@ -2,7 +2,7 @@
 parameters:
     database_driver: pdo_pgsql
     database_host: ec2-79-125-118-221.eu-west-1.compute.amazonaws.com
-    database_port: null
+    database_port: 5432
     database_name: dascb2sd4256h5
     database_user: uywmycibtgafkm
     database_password: 726f0154c61567e9df3c372e431077e2fd6b89a93a269203c8c4ddcf2ff7e00b
