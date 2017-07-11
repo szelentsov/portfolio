@@ -1,0 +1,424 @@
+/*
+* ----------------------------------------------------------------------------------------
+Author       : Sergey Zelentsov
+Version      : 1.0                                          
+* ----------------------------------------------------------------------------------------
+*/
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 01.GLOBAL CSS STYLE
+* 02.PRELOADER
+* 03.HOMEPAGE CSS STYLE
+* 04.ABOUT CSS STYLE
+* 05.PORTFOLIO CSS STYLE
+* 06.CONTACT CSS STYLE
+* 07.FOOTER
+* 08.CROLL UP
+* ----------------------------------------------------------------------------------------
+*/
+
+body {
+    font-size: 14px;
+    font-weight: 300;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html,
+body {
+    height: 100%
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    -webkit-transition: all 0.4s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+p {
+    line-height: 28px;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+section{
+    padding: 50px 0px;
+}
+@media screen and (max-width:767px) { 
+    section{
+        padding-bottom: 20px;
+    }
+}
+.section-title h2{
+    text-transform: capitalize;
+    font-weight: 900;
+    color: #434c47;
+    padding-bottom: 30px;
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 02.PRELOADER
+* ----------------------------------------------------------------------------------------
+*/
+
+.preloader {
+    background: #434c47;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1100;
+}
+.status{
+    width: 250px;
+    height: 100px;
+    position: absolute;
+    left: 50%;top: 48%;
+    margin-left:-125px;
+    margin-top:-75px;
+    color:#fff;
+    font-size:40px;
+    letter-spacing:-2px;
+    text-align:center;
+    line-height:35px;
+}
+.svg_anm {
+    position: absolute;
+    width: 41px;
+    height: 41px;
+    background: url(../../img/tail-spin.svg) center center no-repeat;
+    background-size:41px;    
+    margin: -16px 0 0 -16px;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 03.HOMEPAGE CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+header{
+    height:100vh;
+    background: url(../../img/bg.jpg) center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.navbar-toggle,.navbar-default .navbar-toggle:hover{
+    border-radius: 0px;
+    background: #434c47;
+}
+
+.navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a{
+    color: #434c47;
+}
+.navbar-default .navbar-nav>li>a{
+    text-transform: uppercase;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+    color: #fff;
+    background: #434c47;
+}
+
+.wrap{
+    max-width: 100%;
+    margin: 40vh auto;
+}
+.type-wrap{
+    margin: 10px auto;
+    padding: 20px;
+    background: #434c47;
+}
+#typed{
+    color: #fff;
+    font-size: 70px;
+}
+.typed-cursor{
+    color: #fff;
+    font-size: 70px;
+    opacity: 1;
+    font-weight: 100;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    -ms-animation: blink 0.7s infinite;
+    -o-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@media screen and (max-width:767px) { 
+    #typed,.typed-cursor{
+        font-size: 22px;
+    }
+}
+@media (min-width:768px) and (max-width:1024px) { 
+    #typed,.typed-cursor{
+        font-size: 30px;
+    }
+}
+@-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-ms-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-o-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+#home-arrow-down{
+    font-size: 40px;
+    text-align: center;
+}
+
+#home-arrow-down a{
+    color: #000;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 04.ABOUT CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+#my-photo,#my-photo img{
+    padding: 0px;
+}
+#about-me h4{
+    margin-top: 0px;
+    font-weight: 900;
+    color: #434c47;
+    text-align: center;
+}
+#about-me p{
+    text-align: justify;
+}
+#my-skill{
+    margin-top: 20px;
+    padding-left: 50px;
+}
+#my-skill li{
+    list-style-type: none;
+    width: 40%;
+    float: left;
+    margin-bottom: 25px;
+    border-bottom: 1px dotted #ccc;
+    display: inline-block;
+    padding-bottom: 10px;
+    color: #a3a3a3;
+    text-align: center;
+}
+
+#my-skill li:nth-child(odd){
+    margin-right: 20px;
+}
+
+@media screen and (max-width:767px) { 
+    #my-skill{
+        padding-left: 10px;
+    }
+    #about-me h4{
+        margin-top: 30px;
+    }
+}
+@media (min-width:768px) and (max-width:1024px) { 
+
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 05.PORTFOLIO CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.item{
+    height: auto;
+}
+.item>figure>img{
+    height: auto;
+    width: 100%;
+    cursor: pointer;
+}
+.item>figure>img:hover {
+    -webkit-filter: opacity(50%);
+    filter: opacity(50%);
+}
+
+.item>figure>figcaption>h2{
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    display: none;
+    color: #fff;
+    text-shadow: 1px 1px 2px black, 0 0 1em black;
+}
+.modal-header {
+    min-height: 0px;
+    padding: 15px;
+    border:none;
+}
+.modal-content{
+    border-radius: 0px;
+}
+.modal-body>.container{
+    padding: 0px;
+}
+.modal-body>.container>.row>div>img{
+    padding-left: 0px;
+}
+.modal-post>h2{
+    text-align: center;
+}
+.modal-post>p{
+    text-align: justify;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 06.CONTACT CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.form-control {
+    display: block;
+    border: 0px;
+    width: 100%;
+    height: 45px;
+    padding: 5px 10px;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #F7F7F7;
+    background-image: none;
+    border-radius: 0px;
+    box-shadow: none;
+    margin-bottom: 15px;
+}
+
+.contact-form button.btn {
+    display: inline-block;
+    color: #fff;
+    background: none;
+    padding: 15px 25px;
+    border: 1px solid #434c47;
+    font-size: 14px;
+    border-radius: 0px;
+    font-weight: 300;
+    background: #434c47;
+    text-transform: capitalize;
+    border-radius: 30px;
+    margin-left: 12px;
+}
+
+#facebook,
+#github,
+#linkedin,
+#mailto,
+#viber{
+    width: 44px;
+    height: 44px;
+    background: url(../../img/social-icons.png);
+    float: left;
+    margin-right: 5px;
+}
+#facebook{
+    margin-left: 12px;
+}
+
+#github{
+    background-position-x: -44px;
+}
+#linkedin{
+    background-position-x: -88px;
+}
+#mailto{
+    background-position-x: -132px;
+}
+#viber{
+    background-position-x: -176px;
+}
+#telMail{
+    margin-top: 20px;
+    padding: 0px;
+}
+#telMail>a>p{
+    text-align: center;
+    color: #434c47;
+    font-size: 20px;
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 07. FOOTER
+* ----------------------------------------------------------------------------------------
+*/
+footer{
+    height: 100px;
+    background: #434c47;
+    padding-top: 30px;
+}
+footer>h5{
+    text-align: center;
+    color: #fff;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 08.CROLL UP
+* ----------------------------------------------------------------------------------------
+*/
+
+.scrollup{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 40px;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
