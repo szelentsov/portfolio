@@ -62,14 +62,6 @@ $(window).on('load', function () {
         return false;
     });
     //end scroll up
-    $( ".item > figure > img" ).hover(function() {
-        var element = $(this).siblings("figcaption").find("h2");
-        element.show(200);
-    }, function(){
-        var element = $(this).siblings("figcaption").find("h2");
-        element.hide(200);
-    });
-           
-    
+
 //END JS
 });
