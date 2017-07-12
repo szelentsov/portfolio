@@ -122,6 +122,11 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             return array (  '_controller' => 'AppBundle\\Controller\\HomeController::home',  '_route' => 'app_home_home',);
         }
 
+        // mess
+        if ('/mess' === $pathinfo) {
+            return array (  '_controller' => 'AppBundle\\Controller\\MessController::mess',  '_route' => 'mess',);
+        }
+
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();
     }
 }
