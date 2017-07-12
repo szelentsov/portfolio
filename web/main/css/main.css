@@ -173,6 +173,9 @@ header{
     #typed,.typed-cursor{
         font-size: 20px;
     }
+    .welcome-mess{
+        padding: 0px;
+    }
 }
 @media (min-width:768px) and (max-width:1024px) { 
     #typed,.typed-cursor{
