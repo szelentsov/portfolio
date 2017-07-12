@@ -15,11 +15,11 @@ class __TwigTemplate_2ab54c967bff1450448be52c06703696926e880c13f0e59bf373d622424
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_1c09ad711d9cb4884772000e65877626ab8cf40882fb911fbe17fc0769fc8926 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_1c09ad711d9cb4884772000e65877626ab8cf40882fb911fbe17fc0769fc8926->enter($__internal_1c09ad711d9cb4884772000e65877626ab8cf40882fb911fbe17fc0769fc8926_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "home.html.twig"));
+        $__internal_f94474d9aaad232a2c89685c79bee53954380d75b8bb4c1539abfbdbe824c574 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_f94474d9aaad232a2c89685c79bee53954380d75b8bb4c1539abfbdbe824c574->enter($__internal_f94474d9aaad232a2c89685c79bee53954380d75b8bb4c1539abfbdbe824c574_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "home.html.twig"));
 
-        $__internal_8c8ae483af63b531bcadbed2ccda1561be2140cc692039f925060b715e3cd45e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_8c8ae483af63b531bcadbed2ccda1561be2140cc692039f925060b715e3cd45e->enter($__internal_8c8ae483af63b531bcadbed2ccda1561be2140cc692039f925060b715e3cd45e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "home.html.twig"));
+        $__internal_c2c2adaef2c3446278e7bbb1ed281e860f9f692f71b6c3f8dfc4c2d17e04cece = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_c2c2adaef2c3446278e7bbb1ed281e860f9f692f71b6c3f8dfc4c2d17e04cece->enter($__internal_c2c2adaef2c3446278e7bbb1ed281e860f9f692f71b6c3f8dfc4c2d17e04cece_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "home.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -85,7 +85,7 @@ class __TwigTemplate_2ab54c967bff1450448be52c06703696926e880c13f0e59bf373d622424
                     </div><!-- /.nav-collapse -->
                 </div><!-- /.container -->
             </nav><!-- /.navbar -->
-            <div class=\"container-fluid\">
+            <div class=\"container-fluid welcome-mess\">
                 <div class=\"row\">
                     <div class=\"col-lg-offset-2 col-md-offset-1 col-lg-8 col-md-10 col-sm-12 col-xs-12\">
                         <div class=\"wrap\">
@@ -164,7 +164,7 @@ class __TwigTemplate_2ab54c967bff1450448be52c06703696926e880c13f0e59bf373d622424
         $context['_seq'] = twig_ensure_traversable(($context["posts"] ?? $this->getContext($context, "posts")));
         foreach ($context['_seq'] as $context["_key"] => $context["post"]) {
             // line 132
-            echo "                            <div class=\"item col-lg-4\">
+            echo "                            <div class=\"item col-lg-4 col-md-4 col-sm-10 col-sm-offset-1 col-xs-12\">
                                 <figure>
                                     <img src=\"";
             // line 134
@@ -231,40 +231,61 @@ class __TwigTemplate_2ab54c967bff1450448be52c06703696926e880c13f0e59bf373d622424
                     <div class=\"section-title\">
                         <h2>Contact Me!</h2>  
                     </div>
-                    <form id=\"contactForm\" class=\"contact-form\" method=\"post\">
+                    <div id=\"load-ajax\">
+                        ";
+        // line 175
+        echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock(($context["form"] ?? $this->getContext($context, "form")), 'form_start');
+        echo "
                         <div class=\"row\">
                             <div class=\"col-md-6\">
-                                <input id=\"name\" class=\"form-control\" type=\"text\" name=\"name\" placeholder=\"Name\" required=\"\">
+                                ";
+        // line 178
+        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["form"] ?? $this->getContext($context, "form")), "name", array()), 'row');
+        echo "
                             </div>
-                            <div class=\"col-md-6\" >
-                                <input id=\"email\" class=\"form-control\" type=\"email\" name=\"email\" placeholder=\"Email\" required=\"\">
+                            <div class=\"col-md-6\">
+                                ";
+        // line 181
+        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["form"] ?? $this->getContext($context, "form")), "email", array()), 'row');
+        echo "
                             </div>
                             <div class=\"col-md-12\" >
-                                <input id=\"subject\" class=\"form-control\" type=\"text\" name=\"subject\" placeholder=\"Subject\" required=\"\">
+                                ";
+        // line 184
+        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["form"] ?? $this->getContext($context, "form")), "subject", array()), 'row');
+        echo "
                             </div>
                             <div class=\"col-md-12\" >
-                                <textarea id=\"message\" class=\"form-control\" placeholder=\"Message\" rows=\"7\" required=\"\"></textarea>
+                                ";
+        // line 187
+        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["form"] ?? $this->getContext($context, "form")), "message", array()), 'row');
+        echo "
                             </div>
                             <div class=\"col-md-12\" >
-                                <button class=\"btn btn-default\" type=\"submit\">Submit Now</button>
+                                ";
+        // line 190
+        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["form"] ?? $this->getContext($context, "form")), "save", array()), 'row');
+        echo "
                             </div>
                         </div>
-                    </form>
+                        ";
+        // line 193
+        echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock(($context["form"] ?? $this->getContext($context, "form")), 'form_end');
+        echo "
+                    </div>
                 </div>
                 <div class=\"row\">
-                    <div class=\"col-lg-3 col-lg-offset-5 col-xs-offset-1\" id=\"telMail\">
+                    <div class=\"col-lg-12\" id=\"telMail\">
                         <a href=\"tel:+380967831904\"><p>+38 (096) 783 19 04</p></a>
                         <a href=\"mailto:zelentsov24@dmail.com\"><p>zelentsov24@gmail.com</p></a>
                     </div>
                 </div>
-                <div class=\"row\">
-                    <div class=\"col-lg-5 col-lg-offset-5 col-xs-offset-2\">
-                        <a href=\"https://www.facebook.com/profile.php?id=100008758237693\" target=\"_blank\"><div id=\"facebook\"></div></a>
-                        <a href=\"https://github.com/szelentsov\" target=\"_blank\"><div id=\"github\"></div></a>
-                        <a href=\"https://www.linkedin.com/in/%D1%81%D0%B5%D1%80%D0%B3%D0%B5%D0%B9-%D0%B7%D0%B5%D0%BB%D0%B5%D0%BD%D1%86%D0%BE%D0%B2-179483117/\" target=\"_blank\"><div id=\"linkedin\"></div></a>
-                        <a href=\"mailto:zelentsov24@gmail.com\"><div id=\"mailto\"></div></a>
-                        <a href=\"viber://chat?number=%2B380967831904\"><div id=\"viber\"></div></a>
-                    </div>
+                <div class=\"soc-icon\">
+                    <a href=\"https://www.facebook.com/profile.php?id=100008758237693\" target=\"_blank\"><div id=\"facebook\"></div></a>
+                    <a href=\"https://github.com/szelentsov\" target=\"_blank\"><div id=\"github\"></div></a>
+                    <a href=\"https://www.linkedin.com/in/%D1%81%D0%B5%D1%80%D0%B3%D0%B5%D0%B9-%D0%B7%D0%B5%D0%BB%D0%B5%D0%BD%D1%86%D0%BE%D0%B2-179483117/\" target=\"_blank\"><div id=\"linkedin\"></div></a>
+                    <a href=\"mailto:zelentsov24@gmail.com\"><div id=\"mailto\"></div></a>
+                    <a href=\"viber://chat?number=%2B380967831904\"><div id=\"viber\"></div></a>
                 </div>
             </div>
         </section>
@@ -309,10 +330,10 @@ class __TwigTemplate_2ab54c967bff1450448be52c06703696926e880c13f0e59bf373d622424
         echo "\"></script>
     </body>";
         
-        $__internal_1c09ad711d9cb4884772000e65877626ab8cf40882fb911fbe17fc0769fc8926->leave($__internal_1c09ad711d9cb4884772000e65877626ab8cf40882fb911fbe17fc0769fc8926_prof);
+        $__internal_f94474d9aaad232a2c89685c79bee53954380d75b8bb4c1539abfbdbe824c574->leave($__internal_f94474d9aaad232a2c89685c79bee53954380d75b8bb4c1539abfbdbe824c574_prof);
 
         
-        $__internal_8c8ae483af63b531bcadbed2ccda1561be2140cc692039f925060b715e3cd45e->leave($__internal_8c8ae483af63b531bcadbed2ccda1561be2140cc692039f925060b715e3cd45e_prof);
+        $__internal_c2c2adaef2c3446278e7bbb1ed281e860f9f692f71b6c3f8dfc4c2d17e04cece->leave($__internal_c2c2adaef2c3446278e7bbb1ed281e860f9f692f71b6c3f8dfc4c2d17e04cece_prof);
 
     }
 
@@ -328,7 +349,7 @@ class __TwigTemplate_2ab54c967bff1450448be52c06703696926e880c13f0e59bf373d622424
 
     public function getDebugInfo()
     {
-        return array (  308 => 237,  303 => 235,  298 => 233,  293 => 231,  222 => 162,  205 => 151,  201 => 150,  197 => 149,  184 => 139,  178 => 136,  171 => 134,  167 => 132,  163 => 131,  47 => 18,  42 => 16,  25 => 1,);
+        return array (  329 => 237,  324 => 235,  319 => 233,  314 => 231,  273 => 193,  267 => 190,  261 => 187,  255 => 184,  249 => 181,  243 => 178,  237 => 175,  222 => 162,  205 => 151,  201 => 150,  197 => 149,  184 => 139,  178 => 136,  171 => 134,  167 => 132,  163 => 131,  47 => 18,  42 => 16,  25 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -398,7 +419,7 @@ class __TwigTemplate_2ab54c967bff1450448be52c06703696926e880c13f0e59bf373d622424
                     </div><!-- /.nav-collapse -->
                 </div><!-- /.container -->
             </nav><!-- /.navbar -->
-            <div class=\"container-fluid\">
+            <div class=\"container-fluid welcome-mess\">
                 <div class=\"row\">
                     <div class=\"col-lg-offset-2 col-md-offset-1 col-lg-8 col-md-10 col-sm-12 col-xs-12\">
                         <div class=\"wrap\">
@@ -472,7 +493,7 @@ class __TwigTemplate_2ab54c967bff1450448be52c06703696926e880c13f0e59bf373d622424
                     </div>
                     <div class=\"col-lg-12\">
                         {% for post in posts %}
-                            <div class=\"item col-lg-4\">
+                            <div class=\"item col-lg-4 col-md-4 col-sm-10 col-sm-offset-1 col-xs-12\">
                                 <figure>
                                     <img src=\"{{ post.img }}\" alt=\"image\" data-toggle=\"modal\" data-target=\"#{{ post.name }}\">
                                     <figcaption>
@@ -514,40 +535,40 @@ class __TwigTemplate_2ab54c967bff1450448be52c06703696926e880c13f0e59bf373d622424
                     <div class=\"section-title\">
                         <h2>Contact Me!</h2>  
                     </div>
-                    <form id=\"contactForm\" class=\"contact-form\" method=\"post\">
+                    <div id=\"load-ajax\">
+                        {{ form_start(form) }}
                         <div class=\"row\">
                             <div class=\"col-md-6\">
-                                <input id=\"name\" class=\"form-control\" type=\"text\" name=\"name\" placeholder=\"Name\" required=\"\">
+                                {{ form_row(form.name) }}
                             </div>
-                            <div class=\"col-md-6\" >
-                                <input id=\"email\" class=\"form-control\" type=\"email\" name=\"email\" placeholder=\"Email\" required=\"\">
-                            </div>
-                            <div class=\"col-md-12\" >
-                                <input id=\"subject\" class=\"form-control\" type=\"text\" name=\"subject\" placeholder=\"Subject\" required=\"\">
+                            <div class=\"col-md-6\">
+                                {{ form_row(form.email) }}
                             </div>
                             <div class=\"col-md-12\" >
-                                <textarea id=\"message\" class=\"form-control\" placeholder=\"Message\" rows=\"7\" required=\"\"></textarea>
+                                {{ form_row(form.subject) }}
                             </div>
                             <div class=\"col-md-12\" >
-                                <button class=\"btn btn-default\" type=\"submit\">Submit Now</button>
+                                {{ form_row(form.message) }}
+                            </div>
+                            <div class=\"col-md-12\" >
+                                {{ form_row(form.save) }}
                             </div>
                         </div>
-                    </form>
+                        {{ form_end(form) }}
+                    </div>
                 </div>
                 <div class=\"row\">
-                    <div class=\"col-lg-3 col-lg-offset-5 col-xs-offset-1\" id=\"telMail\">
+                    <div class=\"col-lg-12\" id=\"telMail\">
                         <a href=\"tel:+380967831904\"><p>+38 (096) 783 19 04</p></a>
                         <a href=\"mailto:zelentsov24@dmail.com\"><p>zelentsov24@gmail.com</p></a>
                     </div>
                 </div>
-                <div class=\"row\">
-                    <div class=\"col-lg-5 col-lg-offset-5 col-xs-offset-2\">
-                        <a href=\"https://www.facebook.com/profile.php?id=100008758237693\" target=\"_blank\"><div id=\"facebook\"></div></a>
-                        <a href=\"https://github.com/szelentsov\" target=\"_blank\"><div id=\"github\"></div></a>
-                        <a href=\"https://www.linkedin.com/in/%D1%81%D0%B5%D1%80%D0%B3%D0%B5%D0%B9-%D0%B7%D0%B5%D0%BB%D0%B5%D0%BD%D1%86%D0%BE%D0%B2-179483117/\" target=\"_blank\"><div id=\"linkedin\"></div></a>
-                        <a href=\"mailto:zelentsov24@gmail.com\"><div id=\"mailto\"></div></a>
-                        <a href=\"viber://chat?number=%2B380967831904\"><div id=\"viber\"></div></a>
-                    </div>
+                <div class=\"soc-icon\">
+                    <a href=\"https://www.facebook.com/profile.php?id=100008758237693\" target=\"_blank\"><div id=\"facebook\"></div></a>
+                    <a href=\"https://github.com/szelentsov\" target=\"_blank\"><div id=\"github\"></div></a>
+                    <a href=\"https://www.linkedin.com/in/%D1%81%D0%B5%D1%80%D0%B3%D0%B5%D0%B9-%D0%B7%D0%B5%D0%BB%D0%B5%D0%BD%D1%86%D0%BE%D0%B2-179483117/\" target=\"_blank\"><div id=\"linkedin\"></div></a>
+                    <a href=\"mailto:zelentsov24@gmail.com\"><div id=\"mailto\"></div></a>
+                    <a href=\"viber://chat?number=%2B380967831904\"><div id=\"viber\"></div></a>
                 </div>
             </div>
         </section>

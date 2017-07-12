@@ -330,7 +330,7 @@ header{
     margin-bottom: 15px;
 }
 
-.contact-form button.btn {
+.submite-form {
     display: inline-block;
     color: #fff;
     background: none;
@@ -344,6 +344,9 @@ header{
     border-radius: 30px;
     margin-left: 12px;
     float: right;
+}
+#load-ajax>h1{
+    text-align: center;
 }
 
 #facebook,

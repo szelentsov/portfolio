@@ -110,4 +110,3 @@ class Posts
         return $this->img;
     }
 }
-

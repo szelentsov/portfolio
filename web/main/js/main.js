@@ -62,6 +62,18 @@ $(window).on('load', function () {
         return false;
     });
     //end scroll up
+    
+    $("form[name='form']").submit(function (e) {
+        e.preventDefault();
+          $.ajax({
+            type        : $("form[name='form']").attr( 'method' ),
+            url         : $("form[name='form']").attr( 'action' ),
+            data        : $("form[name='form']").serializeArray(),
+            success     : function() {
+              $("#load-ajax").load("mess");
+          }
+          });
 
+    });
 //END JS
 });
