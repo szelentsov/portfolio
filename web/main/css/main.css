@@ -171,7 +171,7 @@ header{
 }
 @media screen and (max-width:767px) { 
     #typed,.typed-cursor{
-        font-size: 22px;
+        font-size: 20px;
     }
 }
 @media (min-width:768px) and (max-width:1024px) { 
