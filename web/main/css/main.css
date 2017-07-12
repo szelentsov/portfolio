@@ -343,6 +343,7 @@ header{
     text-transform: capitalize;
     border-radius: 30px;
     margin-left: 12px;
+    float: right;
 }
 
 #facebook,
@@ -356,10 +357,6 @@ header{
     float: left;
     margin-right: 5px;
 }
-#facebook{
-    margin-left: 12px;
-}
-
 #github{
     background-position-x: -44px;
 }
@@ -373,13 +370,17 @@ header{
     background-position-x: -176px;
 }
 #telMail{
-    margin-top: 20px;
+    margin-top: 50px;
     padding: 0px;
 }
 #telMail>a>p{
     text-align: center;
     color: #434c47;
     font-size: 20px;
+}
+.soc-icon{
+    width: 250px;
+    margin: 0 auto;
 }
 /*
 * ----------------------------------------------------------------------------------------
