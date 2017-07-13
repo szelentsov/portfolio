@@ -300,10 +300,10 @@ header{
 .modal-body>.container>.row>div>img{
     padding-left: 0px;
 }
-.modal-post>h2{
+.modal-post>div>h2{
     text-align: center;
 }
-.modal-post>p{
+.modal-post>div>p{
     text-align: justify;
 }
 

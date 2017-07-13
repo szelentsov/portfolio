@@ -15,11 +15,11 @@ class __TwigTemplate_a3d2b325122853184e57c1f6aee7d2df45ff1a12d29ef2faf874cb5e1b2
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_ce7bcbf0e0fa06472f6157ff6e461741cfb07cee3614861e2be30af99f35568a = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_ce7bcbf0e0fa06472f6157ff6e461741cfb07cee3614861e2be30af99f35568a->enter($__internal_ce7bcbf0e0fa06472f6157ff6e461741cfb07cee3614861e2be30af99f35568a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "home.html.twig"));
+        $__internal_0a2be3f0feee541447f2cd08a3d115634ae6343739d60871328b9ba37ad611c9 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_0a2be3f0feee541447f2cd08a3d115634ae6343739d60871328b9ba37ad611c9->enter($__internal_0a2be3f0feee541447f2cd08a3d115634ae6343739d60871328b9ba37ad611c9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "home.html.twig"));
 
-        $__internal_543a5accea407de438baa030fc249501734cde513d8e7e2e7ea791cf7e98fc3c = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_543a5accea407de438baa030fc249501734cde513d8e7e2e7ea791cf7e98fc3c->enter($__internal_543a5accea407de438baa030fc249501734cde513d8e7e2e7ea791cf7e98fc3c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "home.html.twig"));
+        $__internal_1daabf2f32bbf27052df2fd1df9a2c02ed028b81106f0376e3b115e4865b0621 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_1daabf2f32bbf27052df2fd1df9a2c02ed028b81106f0376e3b115e4865b0621->enter($__internal_1daabf2f32bbf27052df2fd1df9a2c02ed028b81106f0376e3b115e4865b0621_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "home.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -247,18 +247,22 @@ class __TwigTemplate_a3d2b325122853184e57c1f6aee7d2df45ff1a12d29ef2faf874cb5e1b2
                                               <div class=\"container\">
                                                   <div class=\"row\">
                                                       <div class=\"col-lg-8 modal-post\">
-                                                          <img src=\"";
-            // line 144
-            echo twig_escape_filter($this->env, $this->getAttribute($context["post"], "img", array()), "html", null, true);
-            echo "\" class=\"col-lg-7 col-md-5 col-sm-12 col-xs-12\" alt=\"image\"/>
-                                                            <h2>";
+                                                          <div class=\"col-lg-6 col-md-5 col-sm-12 col-xs-12\">
+                                                            <img src=\"";
             // line 145
+            echo twig_escape_filter($this->env, $this->getAttribute($context["post"], "img", array()), "html", null, true);
+            echo "\" class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\"  alt=\"image\"/>
+                                                          </div>
+                                                          <div class=\"col-lg-6 col-md-5 col-sm-12 col-xs-12\">
+                                                            <h2>";
+            // line 148
             echo twig_escape_filter($this->env, $this->getAttribute($context["post"], "name", array()), "html", null, true);
             echo "</h2>
                                                             <p>";
-            // line 146
+            // line 149
             echo twig_escape_filter($this->env, $this->getAttribute($context["post"], "description", array()), "html", null, true);
             echo "</p>
+                                                          </div>
                                                       </div>
                                                   </div>
                                               </div>
@@ -273,7 +277,7 @@ class __TwigTemplate_a3d2b325122853184e57c1f6aee7d2df45ff1a12d29ef2faf874cb5e1b2
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['post'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 157
+        // line 161
         echo "                    </div>
                 </div>
             </div>
@@ -285,49 +289,49 @@ class __TwigTemplate_a3d2b325122853184e57c1f6aee7d2df45ff1a12d29ef2faf874cb5e1b2
                 <div class=\"row\">
                     <div class=\"section-title\">
                         <h2>";
-        // line 167
+        // line 171
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["config"] ?? $this->getContext($context, "config")), 10, array(), "array"), "value", array()), "html", null, true);
         echo "</h2>  
                     </div>
                     <div id=\"load-ajax\">
                         ";
-        // line 170
+        // line 174
         echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock(($context["form"] ?? $this->getContext($context, "form")), 'form_start');
         echo "
                         <div class=\"row\">
                             <div class=\"col-md-6\">
                                 ";
-        // line 173
+        // line 177
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["form"] ?? $this->getContext($context, "form")), "name", array()), 'row');
         echo "
                             </div>
                             <div class=\"col-md-6\">
                                 ";
-        // line 176
+        // line 180
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["form"] ?? $this->getContext($context, "form")), "email", array()), 'row');
         echo "
                             </div>
                             <div class=\"col-md-12\" >
                                 ";
-        // line 179
+        // line 183
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["form"] ?? $this->getContext($context, "form")), "subject", array()), 'row');
         echo "
                             </div>
                             <div class=\"col-md-12\" >
                                 ";
-        // line 182
+        // line 186
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["form"] ?? $this->getContext($context, "form")), "message", array()), 'row');
         echo "
                             </div>
                             <div class=\"col-md-12\" >
                                 ";
-        // line 185
+        // line 189
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["form"] ?? $this->getContext($context, "form")), "save", array()), 'row');
         echo "
                             </div>
                         </div>
                         ";
-        // line 188
+        // line 192
         echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock(($context["form"] ?? $this->getContext($context, "form")), 'form_end');
         echo "
                     </div>
@@ -352,7 +356,7 @@ class __TwigTemplate_a3d2b325122853184e57c1f6aee7d2df45ff1a12d29ef2faf874cb5e1b2
         <footer class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">
             <h5>
                 ";
-        // line 210
+        // line 214
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["config"] ?? $this->getContext($context, "config")), 21, array(), "array"), "value", array()), "html", null, true);
         echo "          
             </h5>
@@ -371,30 +375,30 @@ class __TwigTemplate_a3d2b325122853184e57c1f6aee7d2df45ff1a12d29ef2faf874cb5e1b2
         <!-- / END CROLL UP-->
         <!-- LATEST JQUERY -->
         <script src=\"";
-        // line 226
+        // line 230
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bootstrap/js/jquery.min.js"), "html", null, true);
         echo "\"></script>
         <!-- BOOTSTRAP JS -->
         <script src=\"";
-        // line 228
+        // line 232
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bootstrap/js/bootstrap.min.js"), "html", null, true);
         echo "\"></script>
         <!-- MAIN JS -->
         <script src=\"";
-        // line 230
+        // line 234
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("main/js/main.js"), "html", null, true);
         echo "\"></script>
         <!-- TYPED JS -->
         <script src=\"";
-        // line 232
+        // line 236
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("main/js/typed.min.js"), "html", null, true);
         echo "\"></script>
     </body>";
         
-        $__internal_ce7bcbf0e0fa06472f6157ff6e461741cfb07cee3614861e2be30af99f35568a->leave($__internal_ce7bcbf0e0fa06472f6157ff6e461741cfb07cee3614861e2be30af99f35568a_prof);
+        $__internal_0a2be3f0feee541447f2cd08a3d115634ae6343739d60871328b9ba37ad611c9->leave($__internal_0a2be3f0feee541447f2cd08a3d115634ae6343739d60871328b9ba37ad611c9_prof);
 
         
-        $__internal_543a5accea407de438baa030fc249501734cde513d8e7e2e7ea791cf7e98fc3c->leave($__internal_543a5accea407de438baa030fc249501734cde513d8e7e2e7ea791cf7e98fc3c_prof);
+        $__internal_1daabf2f32bbf27052df2fd1df9a2c02ed028b81106f0376e3b115e4865b0621->leave($__internal_1daabf2f32bbf27052df2fd1df9a2c02ed028b81106f0376e3b115e4865b0621_prof);
 
     }
 
@@ -410,7 +414,7 @@ class __TwigTemplate_a3d2b325122853184e57c1f6aee7d2df45ff1a12d29ef2faf874cb5e1b2
 
     public function getDebugInfo()
     {
-        return array (  390 => 232,  385 => 230,  380 => 228,  375 => 226,  356 => 210,  331 => 188,  325 => 185,  319 => 182,  313 => 179,  307 => 176,  301 => 173,  295 => 170,  289 => 167,  277 => 157,  260 => 146,  256 => 145,  252 => 144,  239 => 134,  233 => 131,  226 => 129,  222 => 127,  218 => 126,  212 => 123,  195 => 109,  191 => 108,  187 => 107,  183 => 106,  179 => 105,  175 => 104,  171 => 103,  167 => 102,  161 => 99,  156 => 97,  145 => 89,  122 => 69,  118 => 68,  114 => 67,  99 => 55,  95 => 54,  91 => 53,  87 => 52,  79 => 47,  47 => 18,  42 => 16,  25 => 1,);
+        return array (  394 => 236,  389 => 234,  384 => 232,  379 => 230,  360 => 214,  335 => 192,  329 => 189,  323 => 186,  317 => 183,  311 => 180,  305 => 177,  299 => 174,  293 => 171,  281 => 161,  263 => 149,  259 => 148,  253 => 145,  239 => 134,  233 => 131,  226 => 129,  222 => 127,  218 => 126,  212 => 123,  195 => 109,  191 => 108,  187 => 107,  183 => 106,  179 => 105,  175 => 104,  171 => 103,  167 => 102,  161 => 99,  156 => 97,  145 => 89,  122 => 69,  118 => 68,  114 => 67,  99 => 55,  95 => 54,  91 => 53,  87 => 52,  79 => 47,  47 => 18,  42 => 16,  25 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -566,9 +570,13 @@ class __TwigTemplate_a3d2b325122853184e57c1f6aee7d2df45ff1a12d29ef2faf874cb5e1b2
                                               <div class=\"container\">
                                                   <div class=\"row\">
                                                       <div class=\"col-lg-8 modal-post\">
-                                                          <img src=\"{{ post.img }}\" class=\"col-lg-7 col-md-5 col-sm-12 col-xs-12\" alt=\"image\"/>
+                                                          <div class=\"col-lg-6 col-md-5 col-sm-12 col-xs-12\">
+                                                            <img src=\"{{ post.img }}\" class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\"  alt=\"image\"/>
+                                                          </div>
+                                                          <div class=\"col-lg-6 col-md-5 col-sm-12 col-xs-12\">
                                                             <h2>{{ post.name }}</h2>
                                                             <p>{{ post.description }}</p>
+                                                          </div>
                                                       </div>
                                                   </div>
                                               </div>
