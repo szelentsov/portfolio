@@ -1,6 +1,6 @@
 <?php
 
-/* ::home.html.twig */
+/* home.html.twig */
 class __TwigTemplate_a3d2b325122853184e57c1f6aee7d2df45ff1a12d29ef2faf874cb5e1b231f99 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -15,11 +15,11 @@ class __TwigTemplate_a3d2b325122853184e57c1f6aee7d2df45ff1a12d29ef2faf874cb5e1b2
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_780bc1033cff9874368041ec1075dde096b868a3ba786507b1ba79dbe83ce5b4 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_780bc1033cff9874368041ec1075dde096b868a3ba786507b1ba79dbe83ce5b4->enter($__internal_780bc1033cff9874368041ec1075dde096b868a3ba786507b1ba79dbe83ce5b4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "::home.html.twig"));
+        $__internal_ce7bcbf0e0fa06472f6157ff6e461741cfb07cee3614861e2be30af99f35568a = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_ce7bcbf0e0fa06472f6157ff6e461741cfb07cee3614861e2be30af99f35568a->enter($__internal_ce7bcbf0e0fa06472f6157ff6e461741cfb07cee3614861e2be30af99f35568a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "home.html.twig"));
 
-        $__internal_dd6ff46e260cb200e6f23b523fa076add51f6db9193c6eb9a638785bd3e658f5 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_dd6ff46e260cb200e6f23b523fa076add51f6db9193c6eb9a638785bd3e658f5->enter($__internal_dd6ff46e260cb200e6f23b523fa076add51f6db9193c6eb9a638785bd3e658f5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "::home.html.twig"));
+        $__internal_543a5accea407de438baa030fc249501734cde513d8e7e2e7ea791cf7e98fc3c = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_543a5accea407de438baa030fc249501734cde513d8e7e2e7ea791cf7e98fc3c->enter($__internal_543a5accea407de438baa030fc249501734cde513d8e7e2e7ea791cf7e98fc3c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "home.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -73,14 +73,31 @@ class __TwigTemplate_a3d2b325122853184e57c1f6aee7d2df45ff1a12d29ef2faf874cb5e1b2
                             <span class=\"icon-bar\"></span>
                             <span class=\"icon-bar\"></span>
                         </button>
-                        <a class=\"navbar-brand\" href=\"#home\">SZelentsov</a>
+                        <a class=\"navbar-brand\" href=\"#home\">
+                            ";
+        // line 47
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["config"] ?? $this->getContext($context, "config")), 0, array(), "array"), "value", array()), "html", null, true);
+        echo "
+                        </a>
                     </div>
                     <div id=\"navbar\" class=\"collapse navbar-collapse\">
                         <ul class=\"nav navbar-nav navbar-right\">
-                            <li class=\"active\"><a href=\"#home\">home</a></li>
-                            <li><a href=\"#about\">about</a></li>
-                            <li><a href=\"#portfolio\">portfolio</a></li>
-                            <li><a href=\"#contact\">contact</a></li>
+                            <li class=\"active\"><a href=\"#home\">";
+        // line 52
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["config"] ?? $this->getContext($context, "config")), 1, array(), "array"), "value", array()), "html", null, true);
+        echo "</a></li>
+                            <li><a href=\"#about\">";
+        // line 53
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["config"] ?? $this->getContext($context, "config")), 2, array(), "array"), "value", array()), "html", null, true);
+        echo "</a></li>
+                            <li><a href=\"#portfolio\">";
+        // line 54
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["config"] ?? $this->getContext($context, "config")), 3, array(), "array"), "value", array()), "html", null, true);
+        echo "</a></li>
+                            <li><a href=\"#contact\">";
+        // line 55
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["config"] ?? $this->getContext($context, "config")), 4, array(), "array"), "value", array()), "html", null, true);
+        echo "</a></li>
                         </ul>
                     </div><!-- /.nav-collapse -->
                 </div><!-- /.container -->
@@ -92,9 +109,18 @@ class __TwigTemplate_a3d2b325122853184e57c1f6aee7d2df45ff1a12d29ef2faf874cb5e1b2
                             <div class=\"type-wrap\">
                                 <div id=\"typed-strings\">
                                     <p></p>
-                                    <p>Welcome!</p>
-                                    <p>I am Sergey Zelentsov.</p>
-                                    <p>Beginner php developer.</p>
+                                    <p>";
+        // line 67
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["config"] ?? $this->getContext($context, "config")), 5, array(), "array"), "value", array()), "html", null, true);
+        echo "</p>
+                                    <p>";
+        // line 68
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["config"] ?? $this->getContext($context, "config")), 6, array(), "array"), "value", array()), "html", null, true);
+        echo "</p>
+                                    <p>";
+        // line 69
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["config"] ?? $this->getContext($context, "config")), 7, array(), "array"), "value", array()), "html", null, true);
+        echo "</p>
                                 </div>
                                 <span id=\"typed\" style=\"white-space:pre;\"></span>
                             </div>
@@ -114,7 +140,10 @@ class __TwigTemplate_a3d2b325122853184e57c1f6aee7d2df45ff1a12d29ef2faf874cb5e1b2
             <div class=\"container\">
                 <div class=\"row\">
                     <div class=\"section-title\">
-                        <h2>Story About Me!</h2>  
+                        <h2>";
+        // line 89
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["config"] ?? $this->getContext($context, "config")), 8, array(), "array"), "value", array()), "html", null, true);
+        echo "</h2>  
                     </div>
                     <div class=\"container-fluid\">
                         <div class=\"row\">
@@ -122,26 +151,49 @@ class __TwigTemplate_a3d2b325122853184e57c1f6aee7d2df45ff1a12d29ef2faf874cb5e1b2
                                 <img src=\"img/im.png\" alt=\"...\" class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">
                             </div>
                             <div class=\"col-lg-6 col-md-6 col-sm-12 col-xs-12\" id=\"about-me\">
-                                <h4>Beginner php developer from Ukraine.</h4>
+                                <h4>";
+        // line 97
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["config"] ?? $this->getContext($context, "config")), 11, array(), "array"), "value", array()), "html", null, true);
+        echo "</h4>
                                 <p>
-                                    My name is Sergey.
-                                    I have higher education - an expert in economic cybernetics.                                   
-                                    The purpose of creating this summary - start a career junior PHP developer.                                   
-                                    I have no commercial experience in the development.
-                                    I have good analytical skills. 
-                                    Easy to learn. 
-                                    I work well in a team.                                   
-                                    I'm waiting for interesting projects, worthy of payment and career opportunities.
+                                    ";
+        // line 99
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["config"] ?? $this->getContext($context, "config")), 12, array(), "array"), "value", array()), "html", null, true);
+        echo "
                                 </p>
                                 <ul id=\"my-skill\">
-                                    <li>HTML/CSS</li>
-                                    <li>PHP (native PHP)</li>
-                                    <li> MVC-pattern</li>
-                                    <li>MySQL/PostgreSQL</li>
-                                    <li>jQuery/ AJAX</li>
-                                    <li>JSON</li>
-                                    <li>GNU/Linux</li>
-                                    <li>Symfony 3</li>
+                                    <li>";
+        // line 102
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["config"] ?? $this->getContext($context, "config")), 13, array(), "array"), "value", array()), "html", null, true);
+        echo "</li>
+                                    <li>";
+        // line 103
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["config"] ?? $this->getContext($context, "config")), 14, array(), "array"), "value", array()), "html", null, true);
+        echo "</li>
+                                    <li>";
+        // line 104
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["config"] ?? $this->getContext($context, "config")), 15, array(), "array"), "value", array()), "html", null, true);
+        echo "</li>
+                                    <li>";
+        // line 105
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["config"] ?? $this->getContext($context, "config")), 16, array(), "array"), "value", array()), "html", null, true);
+        echo "</li>
+                                    <li>";
+        // line 106
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["config"] ?? $this->getContext($context, "config")), 17, array(), "array"), "value", array()), "html", null, true);
+        echo "</li>
+                                    <li>";
+        // line 107
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["config"] ?? $this->getContext($context, "config")), 18, array(), "array"), "value", array()), "html", null, true);
+        echo "</li>
+                                    <li>";
+        // line 108
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["config"] ?? $this->getContext($context, "config")), 19, array(), "array"), "value", array()), "html", null, true);
+        echo "</li>
+                                    <li>";
+        // line 109
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["config"] ?? $this->getContext($context, "config")), 20, array(), "array"), "value", array()), "html", null, true);
+        echo "</li>
                                 </ul>
                             </div>
                         </div>
@@ -155,32 +207,35 @@ class __TwigTemplate_a3d2b325122853184e57c1f6aee7d2df45ff1a12d29ef2faf874cb5e1b2
             <div class=\"container\">
                 <div class=\"row\">
                     <div class=\"section-title\">
-                        <h2>Works</h2>  
+                        <h2>";
+        // line 123
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["config"] ?? $this->getContext($context, "config")), 9, array(), "array"), "value", array()), "html", null, true);
+        echo "</h2>  
                     </div>
                     <div class=\"col-lg-12\">
                         ";
-        // line 131
+        // line 126
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(($context["posts"] ?? $this->getContext($context, "posts")));
         foreach ($context['_seq'] as $context["_key"] => $context["post"]) {
-            // line 132
+            // line 127
             echo "                            <div class=\"item col-lg-4 col-md-4 col-sm-10 col-sm-offset-1 col-xs-12\">
                                 <figure>
                                     <img src=\"";
-            // line 134
+            // line 129
             echo twig_escape_filter($this->env, $this->getAttribute($context["post"], "img", array()), "html", null, true);
             echo "\" alt=\"image\" data-toggle=\"modal\" data-target=\"#";
             echo twig_escape_filter($this->env, $this->getAttribute($context["post"], "name", array()), "html", null, true);
             echo "\">
                                     <figcaption>
                                         <h2>";
-            // line 136
+            // line 131
             echo twig_escape_filter($this->env, $this->getAttribute($context["post"], "name", array()), "html", null, true);
             echo "</h2>
                                     </figcaption>
                                     <!-- Modal -->
                                     <div class=\"modal fade  \" id=\"";
-            // line 139
+            // line 134
             echo twig_escape_filter($this->env, $this->getAttribute($context["post"], "name", array()), "html", null, true);
             echo "\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModalLabel\" aria-hidden=\"true\">
                                       <div class=\"modal-dialog modal-lg\">
@@ -193,15 +248,15 @@ class __TwigTemplate_a3d2b325122853184e57c1f6aee7d2df45ff1a12d29ef2faf874cb5e1b2
                                                   <div class=\"row\">
                                                       <div class=\"col-lg-8 modal-post\">
                                                           <img src=\"";
-            // line 149
+            // line 144
             echo twig_escape_filter($this->env, $this->getAttribute($context["post"], "img", array()), "html", null, true);
             echo "\" class=\"col-lg-7 col-md-5 col-sm-12 col-xs-12\" alt=\"image\"/>
                                                             <h2>";
-            // line 150
+            // line 145
             echo twig_escape_filter($this->env, $this->getAttribute($context["post"], "name", array()), "html", null, true);
             echo "</h2>
                                                             <p>";
-            // line 151
+            // line 146
             echo twig_escape_filter($this->env, $this->getAttribute($context["post"], "description", array()), "html", null, true);
             echo "</p>
                                                       </div>
@@ -218,7 +273,7 @@ class __TwigTemplate_a3d2b325122853184e57c1f6aee7d2df45ff1a12d29ef2faf874cb5e1b2
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['post'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 162
+        // line 157
         echo "                    </div>
                 </div>
             </div>
@@ -229,47 +284,50 @@ class __TwigTemplate_a3d2b325122853184e57c1f6aee7d2df45ff1a12d29ef2faf874cb5e1b2
             <div class=\"container\">
                 <div class=\"row\">
                     <div class=\"section-title\">
-                        <h2>Contact Me!</h2>  
+                        <h2>";
+        // line 167
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["config"] ?? $this->getContext($context, "config")), 10, array(), "array"), "value", array()), "html", null, true);
+        echo "</h2>  
                     </div>
                     <div id=\"load-ajax\">
                         ";
-        // line 175
+        // line 170
         echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock(($context["form"] ?? $this->getContext($context, "form")), 'form_start');
         echo "
                         <div class=\"row\">
                             <div class=\"col-md-6\">
                                 ";
-        // line 178
+        // line 173
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["form"] ?? $this->getContext($context, "form")), "name", array()), 'row');
         echo "
                             </div>
                             <div class=\"col-md-6\">
                                 ";
-        // line 181
+        // line 176
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["form"] ?? $this->getContext($context, "form")), "email", array()), 'row');
         echo "
                             </div>
                             <div class=\"col-md-12\" >
                                 ";
-        // line 184
+        // line 179
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["form"] ?? $this->getContext($context, "form")), "subject", array()), 'row');
         echo "
                             </div>
                             <div class=\"col-md-12\" >
                                 ";
-        // line 187
+        // line 182
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["form"] ?? $this->getContext($context, "form")), "message", array()), 'row');
         echo "
                             </div>
                             <div class=\"col-md-12\" >
                                 ";
-        // line 190
+        // line 185
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["form"] ?? $this->getContext($context, "form")), "save", array()), 'row');
         echo "
                             </div>
                         </div>
                         ";
-        // line 193
+        // line 188
         echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock(($context["form"] ?? $this->getContext($context, "form")), 'form_end');
         echo "
                     </div>
@@ -293,7 +351,10 @@ class __TwigTemplate_a3d2b325122853184e57c1f6aee7d2df45ff1a12d29ef2faf874cb5e1b2
         <!-- START FOOTER-->
         <footer class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">
             <h5>
-                © 2017 Sergey Zelentsov            
+                ";
+        // line 210
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["config"] ?? $this->getContext($context, "config")), 21, array(), "array"), "value", array()), "html", null, true);
+        echo "          
             </h5>
         </footer>
         <!-- / END FOOTER-->
@@ -310,36 +371,36 @@ class __TwigTemplate_a3d2b325122853184e57c1f6aee7d2df45ff1a12d29ef2faf874cb5e1b2
         <!-- / END CROLL UP-->
         <!-- LATEST JQUERY -->
         <script src=\"";
-        // line 231
+        // line 226
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bootstrap/js/jquery.min.js"), "html", null, true);
         echo "\"></script>
         <!-- BOOTSTRAP JS -->
         <script src=\"";
-        // line 233
+        // line 228
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bootstrap/js/bootstrap.min.js"), "html", null, true);
         echo "\"></script>
         <!-- MAIN JS -->
         <script src=\"";
-        // line 235
+        // line 230
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("main/js/main.js"), "html", null, true);
         echo "\"></script>
         <!-- TYPED JS -->
         <script src=\"";
-        // line 237
+        // line 232
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("main/js/typed.min.js"), "html", null, true);
         echo "\"></script>
     </body>";
         
-        $__internal_780bc1033cff9874368041ec1075dde096b868a3ba786507b1ba79dbe83ce5b4->leave($__internal_780bc1033cff9874368041ec1075dde096b868a3ba786507b1ba79dbe83ce5b4_prof);
+        $__internal_ce7bcbf0e0fa06472f6157ff6e461741cfb07cee3614861e2be30af99f35568a->leave($__internal_ce7bcbf0e0fa06472f6157ff6e461741cfb07cee3614861e2be30af99f35568a_prof);
 
         
-        $__internal_dd6ff46e260cb200e6f23b523fa076add51f6db9193c6eb9a638785bd3e658f5->leave($__internal_dd6ff46e260cb200e6f23b523fa076add51f6db9193c6eb9a638785bd3e658f5_prof);
+        $__internal_543a5accea407de438baa030fc249501734cde513d8e7e2e7ea791cf7e98fc3c->leave($__internal_543a5accea407de438baa030fc249501734cde513d8e7e2e7ea791cf7e98fc3c_prof);
 
     }
 
     public function getTemplateName()
     {
-        return "::home.html.twig";
+        return "home.html.twig";
     }
 
     public function isTraitable()
@@ -349,7 +410,7 @@ class __TwigTemplate_a3d2b325122853184e57c1f6aee7d2df45ff1a12d29ef2faf874cb5e1b2
 
     public function getDebugInfo()
     {
-        return array (  329 => 237,  324 => 235,  319 => 233,  314 => 231,  273 => 193,  267 => 190,  261 => 187,  255 => 184,  249 => 181,  243 => 178,  237 => 175,  222 => 162,  205 => 151,  201 => 150,  197 => 149,  184 => 139,  178 => 136,  171 => 134,  167 => 132,  163 => 131,  47 => 18,  42 => 16,  25 => 1,);
+        return array (  390 => 232,  385 => 230,  380 => 228,  375 => 226,  356 => 210,  331 => 188,  325 => 185,  319 => 182,  313 => 179,  307 => 176,  301 => 173,  295 => 170,  289 => 167,  277 => 157,  260 => 146,  256 => 145,  252 => 144,  239 => 134,  233 => 131,  226 => 129,  222 => 127,  218 => 126,  212 => 123,  195 => 109,  191 => 108,  187 => 107,  183 => 106,  179 => 105,  175 => 104,  171 => 103,  167 => 102,  161 => 99,  156 => 97,  145 => 89,  122 => 69,  118 => 68,  114 => 67,  99 => 55,  95 => 54,  91 => 53,  87 => 52,  79 => 47,  47 => 18,  42 => 16,  25 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -407,14 +468,16 @@ class __TwigTemplate_a3d2b325122853184e57c1f6aee7d2df45ff1a12d29ef2faf874cb5e1b2
                             <span class=\"icon-bar\"></span>
                             <span class=\"icon-bar\"></span>
                         </button>
-                        <a class=\"navbar-brand\" href=\"#home\">SZelentsov</a>
+                        <a class=\"navbar-brand\" href=\"#home\">
+                            {{ config[0].value }}
+                        </a>
                     </div>
                     <div id=\"navbar\" class=\"collapse navbar-collapse\">
                         <ul class=\"nav navbar-nav navbar-right\">
-                            <li class=\"active\"><a href=\"#home\">home</a></li>
-                            <li><a href=\"#about\">about</a></li>
-                            <li><a href=\"#portfolio\">portfolio</a></li>
-                            <li><a href=\"#contact\">contact</a></li>
+                            <li class=\"active\"><a href=\"#home\">{{ config[1].value }}</a></li>
+                            <li><a href=\"#about\">{{ config[2].value }}</a></li>
+                            <li><a href=\"#portfolio\">{{ config[3].value }}</a></li>
+                            <li><a href=\"#contact\">{{ config[4].value }}</a></li>
                         </ul>
                     </div><!-- /.nav-collapse -->
                 </div><!-- /.container -->
@@ -426,9 +489,9 @@ class __TwigTemplate_a3d2b325122853184e57c1f6aee7d2df45ff1a12d29ef2faf874cb5e1b2
                             <div class=\"type-wrap\">
                                 <div id=\"typed-strings\">
                                     <p></p>
-                                    <p>Welcome!</p>
-                                    <p>I am Sergey Zelentsov.</p>
-                                    <p>Beginner php developer.</p>
+                                    <p>{{ config[5].value }}</p>
+                                    <p>{{ config[6].value }}</p>
+                                    <p>{{ config[7].value }}</p>
                                 </div>
                                 <span id=\"typed\" style=\"white-space:pre;\"></span>
                             </div>
@@ -448,7 +511,7 @@ class __TwigTemplate_a3d2b325122853184e57c1f6aee7d2df45ff1a12d29ef2faf874cb5e1b2
             <div class=\"container\">
                 <div class=\"row\">
                     <div class=\"section-title\">
-                        <h2>Story About Me!</h2>  
+                        <h2>{{ config[8].value }}</h2>  
                     </div>
                     <div class=\"container-fluid\">
                         <div class=\"row\">
@@ -456,26 +519,19 @@ class __TwigTemplate_a3d2b325122853184e57c1f6aee7d2df45ff1a12d29ef2faf874cb5e1b2
                                 <img src=\"img/im.png\" alt=\"...\" class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">
                             </div>
                             <div class=\"col-lg-6 col-md-6 col-sm-12 col-xs-12\" id=\"about-me\">
-                                <h4>Beginner php developer from Ukraine.</h4>
+                                <h4>{{ config[11].value }}</h4>
                                 <p>
-                                    My name is Sergey.
-                                    I have higher education - an expert in economic cybernetics.                                   
-                                    The purpose of creating this summary - start a career junior PHP developer.                                   
-                                    I have no commercial experience in the development.
-                                    I have good analytical skills. 
-                                    Easy to learn. 
-                                    I work well in a team.                                   
-                                    I'm waiting for interesting projects, worthy of payment and career opportunities.
+                                    {{ config[12].value }}
                                 </p>
                                 <ul id=\"my-skill\">
-                                    <li>HTML/CSS</li>
-                                    <li>PHP (native PHP)</li>
-                                    <li> MVC-pattern</li>
-                                    <li>MySQL/PostgreSQL</li>
-                                    <li>jQuery/ AJAX</li>
-                                    <li>JSON</li>
-                                    <li>GNU/Linux</li>
-                                    <li>Symfony 3</li>
+                                    <li>{{ config[13].value }}</li>
+                                    <li>{{ config[14].value }}</li>
+                                    <li>{{ config[15].value }}</li>
+                                    <li>{{ config[16].value }}</li>
+                                    <li>{{ config[17].value }}</li>
+                                    <li>{{ config[18].value }}</li>
+                                    <li>{{ config[19].value }}</li>
+                                    <li>{{ config[20].value }}</li>
                                 </ul>
                             </div>
                         </div>
@@ -489,7 +545,7 @@ class __TwigTemplate_a3d2b325122853184e57c1f6aee7d2df45ff1a12d29ef2faf874cb5e1b2
             <div class=\"container\">
                 <div class=\"row\">
                     <div class=\"section-title\">
-                        <h2>Works</h2>  
+                        <h2>{{ config[9].value }}</h2>  
                     </div>
                     <div class=\"col-lg-12\">
                         {% for post in posts %}
@@ -533,7 +589,7 @@ class __TwigTemplate_a3d2b325122853184e57c1f6aee7d2df45ff1a12d29ef2faf874cb5e1b2
             <div class=\"container\">
                 <div class=\"row\">
                     <div class=\"section-title\">
-                        <h2>Contact Me!</h2>  
+                        <h2>{{ config[10].value }}</h2>  
                     </div>
                     <div id=\"load-ajax\">
                         {{ form_start(form) }}
@@ -576,7 +632,7 @@ class __TwigTemplate_a3d2b325122853184e57c1f6aee7d2df45ff1a12d29ef2faf874cb5e1b2
         <!-- START FOOTER-->
         <footer class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">
             <h5>
-                © 2017 Sergey Zelentsov            
+                {{ config[21].value }}          
             </h5>
         </footer>
         <!-- / END FOOTER-->
@@ -599,6 +655,6 @@ class __TwigTemplate_a3d2b325122853184e57c1f6aee7d2df45ff1a12d29ef2faf874cb5e1b2
         <script src=\"{{ asset('main/js/main.js') }}\"></script>
         <!-- TYPED JS -->
         <script src=\"{{ asset('main/js/typed.min.js') }}\"></script>
-    </body>", "::home.html.twig", "/home/sergey/portfolio_new/app/Resources/views/home.html.twig");
+    </body>", "home.html.twig", "/home/sergey/portfolio_new/app/Resources/views/home.html.twig");
     }
 }

@@ -18,6 +18,7 @@ class HomeController extends Controller {
 
     public function home(Request $request) {
         $newForm = new Form();
+        $config = $this->getDoctrine()->getRepository('AppBundle:Config')->findAll();
         $posts = $this->getDoctrine()->getRepository('AppBundle:Posts')->findAll();//получаем все записи из бд для постов
         
         //форма обратной связи
@@ -38,7 +39,7 @@ class HomeController extends Controller {
             $em->flush();
         }
         
-        return $this->render('home.html.twig', array('posts' => $posts,'form' => $form->createView()));
+        return $this->render('home.html.twig', array('posts' => $posts,'config' => $config,'form' => $form->createView()));
     }
 
 }
