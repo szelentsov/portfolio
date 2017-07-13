@@ -73,7 +73,32 @@ $(window).on('load', function () {
               $("#load-ajax").load("mess");
           }
           });
-
     });
+    
+    $.fn.extend({
+        animateCss: function (animationName) {
+            var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+            this.addClass('animated ' + animationName).one(animationEnd, function() {
+                $(this).removeClass('animated ' + animationName);
+            });
+            return this;
+        }
+    });
+    
+    $(window).scroll(function () {
+        if ($(this).scrollTop() <20) {
+            $('#my-photo').animateCss('bounceInLeft');
+            $('#section-title-2').animateCss('bounceInLeft');
+            $('#about-me').animateCss('bounceInRight');
+        } 
+    });
+    $(window).scroll(function () {
+        if ($(this).scrollTop() >20||$(this).scrollTop() <60) {
+            $('#section-title-3').animateCss('bounceInLeft');
+            $('figure>img').animateCss('bounceInRight');
+            $('figure>figcaption>h2').animateCss('bounceInLeft');
+        } 
+    });
+
 //END JS
 });

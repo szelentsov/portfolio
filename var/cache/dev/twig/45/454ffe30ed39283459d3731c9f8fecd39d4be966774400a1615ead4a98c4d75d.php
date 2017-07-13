@@ -15,11 +15,11 @@ class __TwigTemplate_a3d2b325122853184e57c1f6aee7d2df45ff1a12d29ef2faf874cb5e1b2
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_0a2be3f0feee541447f2cd08a3d115634ae6343739d60871328b9ba37ad611c9 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_0a2be3f0feee541447f2cd08a3d115634ae6343739d60871328b9ba37ad611c9->enter($__internal_0a2be3f0feee541447f2cd08a3d115634ae6343739d60871328b9ba37ad611c9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "home.html.twig"));
+        $__internal_32359e5b0e77392dd671aa1398d5a65e15fce00567fa41397ab6daa7b01e74e3 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_32359e5b0e77392dd671aa1398d5a65e15fce00567fa41397ab6daa7b01e74e3->enter($__internal_32359e5b0e77392dd671aa1398d5a65e15fce00567fa41397ab6daa7b01e74e3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "home.html.twig"));
 
-        $__internal_1daabf2f32bbf27052df2fd1df9a2c02ed028b81106f0376e3b115e4865b0621 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_1daabf2f32bbf27052df2fd1df9a2c02ed028b81106f0376e3b115e4865b0621->enter($__internal_1daabf2f32bbf27052df2fd1df9a2c02ed028b81106f0376e3b115e4865b0621_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "home.html.twig"));
+        $__internal_dc6217286dc4217558b87ffb004947a07c7c22ef261a563fbf8890d3502507b3 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_dc6217286dc4217558b87ffb004947a07c7c22ef261a563fbf8890d3502507b3->enter($__internal_dc6217286dc4217558b87ffb004947a07c7c22ef261a563fbf8890d3502507b3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "home.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -41,9 +41,14 @@ class __TwigTemplate_a3d2b325122853184e57c1f6aee7d2df45ff1a12d29ef2faf874cb5e1b2
         // line 16
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bootstrap/css/bootstrap.min.css"), "html", null, true);
         echo "\" />
-        <!-- MAIN CSS -->
+        <!-- Animate CSS -->
         <link rel=\"stylesheet\" href=\"";
         // line 18
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("main/css/animate.css"), "html", null, true);
+        echo "\" />
+        <!-- MAIN CSS -->
+        <link rel=\"stylesheet\" href=\"";
+        // line 20
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("main/css/main.css"), "html", null, true);
         echo "\" />
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -75,7 +80,7 @@ class __TwigTemplate_a3d2b325122853184e57c1f6aee7d2df45ff1a12d29ef2faf874cb5e1b2
                         </button>
                         <a class=\"navbar-brand\" href=\"#home\">
                             ";
-        // line 47
+        // line 49
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["config"] ?? $this->getContext($context, "config")), 0, array(), "array"), "value", array()), "html", null, true);
         echo "
                         </a>
@@ -83,19 +88,19 @@ class __TwigTemplate_a3d2b325122853184e57c1f6aee7d2df45ff1a12d29ef2faf874cb5e1b2
                     <div id=\"navbar\" class=\"collapse navbar-collapse\">
                         <ul class=\"nav navbar-nav navbar-right\">
                             <li class=\"active\"><a href=\"#home\">";
-        // line 52
+        // line 54
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["config"] ?? $this->getContext($context, "config")), 1, array(), "array"), "value", array()), "html", null, true);
         echo "</a></li>
                             <li><a href=\"#about\">";
-        // line 53
+        // line 55
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["config"] ?? $this->getContext($context, "config")), 2, array(), "array"), "value", array()), "html", null, true);
         echo "</a></li>
                             <li><a href=\"#portfolio\">";
-        // line 54
+        // line 56
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["config"] ?? $this->getContext($context, "config")), 3, array(), "array"), "value", array()), "html", null, true);
         echo "</a></li>
                             <li><a href=\"#contact\">";
-        // line 55
+        // line 57
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["config"] ?? $this->getContext($context, "config")), 4, array(), "array"), "value", array()), "html", null, true);
         echo "</a></li>
                         </ul>
@@ -110,15 +115,15 @@ class __TwigTemplate_a3d2b325122853184e57c1f6aee7d2df45ff1a12d29ef2faf874cb5e1b2
                                 <div id=\"typed-strings\">
                                     <p></p>
                                     <p>";
-        // line 67
+        // line 69
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["config"] ?? $this->getContext($context, "config")), 5, array(), "array"), "value", array()), "html", null, true);
         echo "</p>
                                     <p>";
-        // line 68
+        // line 70
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["config"] ?? $this->getContext($context, "config")), 6, array(), "array"), "value", array()), "html", null, true);
         echo "</p>
                                     <p>";
-        // line 69
+        // line 71
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["config"] ?? $this->getContext($context, "config")), 7, array(), "array"), "value", array()), "html", null, true);
         echo "</p>
                                 </div>
@@ -139,9 +144,9 @@ class __TwigTemplate_a3d2b325122853184e57c1f6aee7d2df45ff1a12d29ef2faf874cb5e1b2
         <section id=\"about\" class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">
             <div class=\"container\">
                 <div class=\"row\">
-                    <div class=\"section-title\">
+                    <div class=\"section-title\" id=\"section-title-2\">
                         <h2>";
-        // line 89
+        // line 91
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["config"] ?? $this->getContext($context, "config")), 8, array(), "array"), "value", array()), "html", null, true);
         echo "</h2>  
                     </div>
@@ -152,46 +157,46 @@ class __TwigTemplate_a3d2b325122853184e57c1f6aee7d2df45ff1a12d29ef2faf874cb5e1b2
                             </div>
                             <div class=\"col-lg-6 col-md-6 col-sm-12 col-xs-12\" id=\"about-me\">
                                 <h4>";
-        // line 97
+        // line 99
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["config"] ?? $this->getContext($context, "config")), 11, array(), "array"), "value", array()), "html", null, true);
         echo "</h4>
                                 <p>
                                     ";
-        // line 99
+        // line 101
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["config"] ?? $this->getContext($context, "config")), 12, array(), "array"), "value", array()), "html", null, true);
         echo "
                                 </p>
                                 <ul id=\"my-skill\">
                                     <li>";
-        // line 102
+        // line 104
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["config"] ?? $this->getContext($context, "config")), 13, array(), "array"), "value", array()), "html", null, true);
         echo "</li>
                                     <li>";
-        // line 103
+        // line 105
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["config"] ?? $this->getContext($context, "config")), 14, array(), "array"), "value", array()), "html", null, true);
         echo "</li>
                                     <li>";
-        // line 104
+        // line 106
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["config"] ?? $this->getContext($context, "config")), 15, array(), "array"), "value", array()), "html", null, true);
         echo "</li>
                                     <li>";
-        // line 105
+        // line 107
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["config"] ?? $this->getContext($context, "config")), 16, array(), "array"), "value", array()), "html", null, true);
         echo "</li>
                                     <li>";
-        // line 106
+        // line 108
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["config"] ?? $this->getContext($context, "config")), 17, array(), "array"), "value", array()), "html", null, true);
         echo "</li>
                                     <li>";
-        // line 107
+        // line 109
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["config"] ?? $this->getContext($context, "config")), 18, array(), "array"), "value", array()), "html", null, true);
         echo "</li>
                                     <li>";
-        // line 108
+        // line 110
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["config"] ?? $this->getContext($context, "config")), 19, array(), "array"), "value", array()), "html", null, true);
         echo "</li>
                                     <li>";
-        // line 109
+        // line 111
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["config"] ?? $this->getContext($context, "config")), 20, array(), "array"), "value", array()), "html", null, true);
         echo "</li>
                                 </ul>
@@ -206,36 +211,36 @@ class __TwigTemplate_a3d2b325122853184e57c1f6aee7d2df45ff1a12d29ef2faf874cb5e1b2
         <section id=\"portfolio\" class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">
             <div class=\"container\">
                 <div class=\"row\">
-                    <div class=\"section-title\">
+                    <div class=\"section-title\" id=\"section-title-3\">
                         <h2>";
-        // line 123
+        // line 125
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["config"] ?? $this->getContext($context, "config")), 9, array(), "array"), "value", array()), "html", null, true);
         echo "</h2>  
                     </div>
                     <div class=\"col-lg-12\">
                         ";
-        // line 126
+        // line 128
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(($context["posts"] ?? $this->getContext($context, "posts")));
         foreach ($context['_seq'] as $context["_key"] => $context["post"]) {
-            // line 127
+            // line 129
             echo "                            <div class=\"item col-lg-4 col-md-4 col-sm-10 col-sm-offset-1 col-xs-12\">
                                 <figure>
                                     <img src=\"";
-            // line 129
+            // line 131
             echo twig_escape_filter($this->env, $this->getAttribute($context["post"], "img", array()), "html", null, true);
             echo "\" alt=\"image\" data-toggle=\"modal\" data-target=\"#";
             echo twig_escape_filter($this->env, $this->getAttribute($context["post"], "name", array()), "html", null, true);
             echo "\">
                                     <figcaption>
                                         <h2>";
-            // line 131
+            // line 133
             echo twig_escape_filter($this->env, $this->getAttribute($context["post"], "name", array()), "html", null, true);
             echo "</h2>
                                     </figcaption>
                                     <!-- Modal -->
                                     <div class=\"modal fade  \" id=\"";
-            // line 134
+            // line 136
             echo twig_escape_filter($this->env, $this->getAttribute($context["post"], "name", array()), "html", null, true);
             echo "\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModalLabel\" aria-hidden=\"true\">
                                       <div class=\"modal-dialog modal-lg\">
@@ -249,17 +254,17 @@ class __TwigTemplate_a3d2b325122853184e57c1f6aee7d2df45ff1a12d29ef2faf874cb5e1b2
                                                       <div class=\"col-lg-8 modal-post\">
                                                           <div class=\"col-lg-6 col-md-5 col-sm-12 col-xs-12\">
                                                             <img src=\"";
-            // line 145
+            // line 147
             echo twig_escape_filter($this->env, $this->getAttribute($context["post"], "img", array()), "html", null, true);
             echo "\" class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\"  alt=\"image\"/>
                                                           </div>
                                                           <div class=\"col-lg-6 col-md-5 col-sm-12 col-xs-12\">
                                                             <h2>";
-            // line 148
+            // line 150
             echo twig_escape_filter($this->env, $this->getAttribute($context["post"], "name", array()), "html", null, true);
             echo "</h2>
                                                             <p>";
-            // line 149
+            // line 151
             echo twig_escape_filter($this->env, $this->getAttribute($context["post"], "description", array()), "html", null, true);
             echo "</p>
                                                           </div>
@@ -277,7 +282,7 @@ class __TwigTemplate_a3d2b325122853184e57c1f6aee7d2df45ff1a12d29ef2faf874cb5e1b2
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['post'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 161
+        // line 163
         echo "                    </div>
                 </div>
             </div>
@@ -289,49 +294,49 @@ class __TwigTemplate_a3d2b325122853184e57c1f6aee7d2df45ff1a12d29ef2faf874cb5e1b2
                 <div class=\"row\">
                     <div class=\"section-title\">
                         <h2>";
-        // line 171
+        // line 173
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["config"] ?? $this->getContext($context, "config")), 10, array(), "array"), "value", array()), "html", null, true);
         echo "</h2>  
                     </div>
                     <div id=\"load-ajax\">
                         ";
-        // line 174
+        // line 176
         echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock(($context["form"] ?? $this->getContext($context, "form")), 'form_start');
         echo "
                         <div class=\"row\">
                             <div class=\"col-md-6\">
                                 ";
-        // line 177
+        // line 179
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["form"] ?? $this->getContext($context, "form")), "name", array()), 'row');
         echo "
                             </div>
                             <div class=\"col-md-6\">
                                 ";
-        // line 180
+        // line 182
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["form"] ?? $this->getContext($context, "form")), "email", array()), 'row');
         echo "
                             </div>
                             <div class=\"col-md-12\" >
                                 ";
-        // line 183
+        // line 185
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["form"] ?? $this->getContext($context, "form")), "subject", array()), 'row');
         echo "
                             </div>
                             <div class=\"col-md-12\" >
                                 ";
-        // line 186
+        // line 188
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["form"] ?? $this->getContext($context, "form")), "message", array()), 'row');
         echo "
                             </div>
                             <div class=\"col-md-12\" >
                                 ";
-        // line 189
+        // line 191
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["form"] ?? $this->getContext($context, "form")), "save", array()), 'row');
         echo "
                             </div>
                         </div>
                         ";
-        // line 192
+        // line 194
         echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock(($context["form"] ?? $this->getContext($context, "form")), 'form_end');
         echo "
                     </div>
@@ -356,7 +361,7 @@ class __TwigTemplate_a3d2b325122853184e57c1f6aee7d2df45ff1a12d29ef2faf874cb5e1b2
         <footer class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">
             <h5>
                 ";
-        // line 214
+        // line 216
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["config"] ?? $this->getContext($context, "config")), 21, array(), "array"), "value", array()), "html", null, true);
         echo "          
             </h5>
@@ -375,30 +380,30 @@ class __TwigTemplate_a3d2b325122853184e57c1f6aee7d2df45ff1a12d29ef2faf874cb5e1b2
         <!-- / END CROLL UP-->
         <!-- LATEST JQUERY -->
         <script src=\"";
-        // line 230
+        // line 232
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bootstrap/js/jquery.min.js"), "html", null, true);
         echo "\"></script>
         <!-- BOOTSTRAP JS -->
         <script src=\"";
-        // line 232
+        // line 234
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bootstrap/js/bootstrap.min.js"), "html", null, true);
         echo "\"></script>
         <!-- MAIN JS -->
         <script src=\"";
-        // line 234
+        // line 236
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("main/js/main.js"), "html", null, true);
         echo "\"></script>
         <!-- TYPED JS -->
         <script src=\"";
-        // line 236
+        // line 238
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("main/js/typed.min.js"), "html", null, true);
         echo "\"></script>
     </body>";
         
-        $__internal_0a2be3f0feee541447f2cd08a3d115634ae6343739d60871328b9ba37ad611c9->leave($__internal_0a2be3f0feee541447f2cd08a3d115634ae6343739d60871328b9ba37ad611c9_prof);
+        $__internal_32359e5b0e77392dd671aa1398d5a65e15fce00567fa41397ab6daa7b01e74e3->leave($__internal_32359e5b0e77392dd671aa1398d5a65e15fce00567fa41397ab6daa7b01e74e3_prof);
 
         
-        $__internal_1daabf2f32bbf27052df2fd1df9a2c02ed028b81106f0376e3b115e4865b0621->leave($__internal_1daabf2f32bbf27052df2fd1df9a2c02ed028b81106f0376e3b115e4865b0621_prof);
+        $__internal_dc6217286dc4217558b87ffb004947a07c7c22ef261a563fbf8890d3502507b3->leave($__internal_dc6217286dc4217558b87ffb004947a07c7c22ef261a563fbf8890d3502507b3_prof);
 
     }
 
@@ -414,7 +419,7 @@ class __TwigTemplate_a3d2b325122853184e57c1f6aee7d2df45ff1a12d29ef2faf874cb5e1b2
 
     public function getDebugInfo()
     {
-        return array (  394 => 236,  389 => 234,  384 => 232,  379 => 230,  360 => 214,  335 => 192,  329 => 189,  323 => 186,  317 => 183,  311 => 180,  305 => 177,  299 => 174,  293 => 171,  281 => 161,  263 => 149,  259 => 148,  253 => 145,  239 => 134,  233 => 131,  226 => 129,  222 => 127,  218 => 126,  212 => 123,  195 => 109,  191 => 108,  187 => 107,  183 => 106,  179 => 105,  175 => 104,  171 => 103,  167 => 102,  161 => 99,  156 => 97,  145 => 89,  122 => 69,  118 => 68,  114 => 67,  99 => 55,  95 => 54,  91 => 53,  87 => 52,  79 => 47,  47 => 18,  42 => 16,  25 => 1,);
+        return array (  399 => 238,  394 => 236,  389 => 234,  384 => 232,  365 => 216,  340 => 194,  334 => 191,  328 => 188,  322 => 185,  316 => 182,  310 => 179,  304 => 176,  298 => 173,  286 => 163,  268 => 151,  264 => 150,  258 => 147,  244 => 136,  238 => 133,  231 => 131,  227 => 129,  223 => 128,  217 => 125,  200 => 111,  196 => 110,  192 => 109,  188 => 108,  184 => 107,  180 => 106,  176 => 105,  172 => 104,  166 => 101,  161 => 99,  150 => 91,  127 => 71,  123 => 70,  119 => 69,  104 => 57,  100 => 56,  96 => 55,  92 => 54,  84 => 49,  52 => 20,  47 => 18,  42 => 16,  25 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -443,6 +448,8 @@ class __TwigTemplate_a3d2b325122853184e57c1f6aee7d2df45ff1a12d29ef2faf874cb5e1b2
         <link href=\"https://fonts.googleapis.com/css?family=Raleway\" rel=\"stylesheet\">
         <!-- BOOTSTRAP CSS -->
         <link rel=\"stylesheet\" href=\"{{ asset('bootstrap/css/bootstrap.min.css') }}\" />
+        <!-- Animate CSS -->
+        <link rel=\"stylesheet\" href=\"{{ asset('main/css/animate.css') }}\" />
         <!-- MAIN CSS -->
         <link rel=\"stylesheet\" href=\"{{ asset('main/css/main.css') }}\" />
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -514,7 +521,7 @@ class __TwigTemplate_a3d2b325122853184e57c1f6aee7d2df45ff1a12d29ef2faf874cb5e1b2
         <section id=\"about\" class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">
             <div class=\"container\">
                 <div class=\"row\">
-                    <div class=\"section-title\">
+                    <div class=\"section-title\" id=\"section-title-2\">
                         <h2>{{ config[8].value }}</h2>  
                     </div>
                     <div class=\"container-fluid\">
@@ -548,7 +555,7 @@ class __TwigTemplate_a3d2b325122853184e57c1f6aee7d2df45ff1a12d29ef2faf874cb5e1b2
         <section id=\"portfolio\" class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">
             <div class=\"container\">
                 <div class=\"row\">
-                    <div class=\"section-title\">
+                    <div class=\"section-title\" id=\"section-title-3\">
                         <h2>{{ config[9].value }}</h2>  
                     </div>
                     <div class=\"col-lg-12\">
